@@ -46,10 +46,6 @@ a {
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
-
 .hero {
     height: 800px;
     width: 100%;
@@ -57,6 +53,16 @@ p {
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+}
+
+.content {  /* moved the .content selector to follow good semantics */
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+p { /* moved the p selector inside the body selectors */
+    font-size: 16px; 
 }
 
 .float-left {
@@ -67,12 +73,6 @@ p {
 .float-right {
     float: right;
     margin-left: 25px;
-}
-
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
 }
 
 .search-engine-optimization { /* changed the positioning of this styling to match the position of the html */ 
@@ -189,14 +189,11 @@ p {
     max-width: 150px;
 }
 
-
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-}
+} 
 
-.footer h2 {
-    font-size: 20px;
-}
+/* removed the .footer styling for an h2 element */
